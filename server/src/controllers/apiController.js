@@ -1,4 +1,4 @@
-import fetchDataApi from "../services/apiService";
+import fetchDataApi from "../services/apiService.js";
 
 const getApiData = async (request, response) => {
   try {
