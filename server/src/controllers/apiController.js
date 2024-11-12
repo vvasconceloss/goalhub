@@ -9,4 +9,4 @@ const getApiData = async (request, response) => {
   }
 }
 
-export default getApiData();
+export default getApiData;
