@@ -1,4 +1,4 @@
-import expressApp from "./app";
+import expressApp from "./app.js";
 
 const PORT = process.env.PORT || 8080;
 
