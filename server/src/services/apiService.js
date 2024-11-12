@@ -5,7 +5,8 @@ const fetchDataApi =  async () => {
   try {
     const apiResponse = await axios.get(configApi.apiUrl, {
       headers: {
-        'Authorization': `Bearer ${configApi.apiKey}`,
+        'x-rapidapi-key': configApi.apiKey,
+        'x-rapidapi-host': configApi.apiHost,
       },
     });
 
