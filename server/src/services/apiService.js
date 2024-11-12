@@ -1,12 +1,11 @@
 import axios from "axios";
-import configApi from "../config/configApi.js";
 
 const fetchDataApi =  async () => {
   try {
-    const apiResponse = await axios.get(configApi.apiUrl, {
+    const apiResponse = await axios.get(process.env.API_URL, {
       headers: {
-        'x-rapidapi-key': configApi.apiKey,
-        'x-rapidapi-host': configApi.apiHost,
+        'x-rapidapi-key': process.env.API_KEY,
+        'x-rapidapi-host': process.env.API_HOST,
       },
     });
 
