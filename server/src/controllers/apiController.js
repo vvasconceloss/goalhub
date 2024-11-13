@@ -1,8 +1,8 @@
 import fetchDataApi from "../services/apiService.js";
 
-const getApiData = async (params, request, response) => {
+const getApiData = async (dynamicPath, request, response) => {
   try {
-    const apiData = await fetchDataApi(params);
+    const apiData = await fetchDataApi(dynamicPath, request.query);
     return response.json(apiData);
   } catch (error) {
     console.log(`Failed to get data from external API: ${error}`);
